@@ -1,0 +1,15 @@
+# Blender backup files
+*.blend1
+
+# Rendered images directory
+Renders/
+
+# CAD models and HDRI's (consider excluding or managing separately)
+CAD Models/
+*.exr
+*.obj
+*.mtl
+
+# Other file patterns to ignore
+*.zip
+*.tmp
