@@ -1,0 +1,8 @@
+{
+  "model_file_path": "../../CAD Models/Esp32/Esp32 Wavefront.obj",
+  "file_format": "obj",
+  "num_renders": 2,
+  "hdri_folder": "../../CAD Models/HDRIs",
+  "render_name": "esp32",
+  "render_output_directory": "../../Renders"
+}
