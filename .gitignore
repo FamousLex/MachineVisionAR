@@ -13,3 +13,4 @@ CAD Models/
 # Other file patterns to ignore
 *.zip
 *.tmp
+*.json
