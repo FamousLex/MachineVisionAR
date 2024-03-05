@@ -4,6 +4,9 @@
 # Rendered images directory
 Renders/
 
+# labelImg directory
+labelImg-master/
+
 # Image files
 *.jpg
 *.png

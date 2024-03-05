@@ -1,10 +1,11 @@
 {
   "model_file_path": "../../CAD Models/Esp32/Esp32 Wavefront.obj",
   "file_format": "obj",
-  "num_renders": 2000,
+  "num_renders": 5,
   "hdri_folder": "../../CAD Models/HDRIs",
   "render_name": "esp32",
   "render_output_directory": "../../Renders/esp32_2000",
+  "render_folder_name": "esp32_2000",
   "percent_planes_added": 25,
   "percent_objects_placed_flat": 10
 }
