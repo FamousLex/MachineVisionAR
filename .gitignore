@@ -1,6 +1,9 @@
 # Blender backup files
 *.blend1
 
+# App folder (need to figure out lfs)
+App/
+
 # Rendered images directory
 Renders/
 
