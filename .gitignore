@@ -1,29 +1,18 @@
 # Blender backup files
 *.blend1
 
-# App folder (need to figure out lfs)
-App/
-
 # Rendered images directory
 Renders/
 
 # labelImg directory
 labelImg-master/
 
-# Image files
-*.jpg
-*.png
-
 # Label files
 objDetection/datasets/data/labels
 
-# CAD models and HDRI's (consider excluding or managing separately)
-CAD Models/
-*.exr
-*.obj
-*.mtl
+# Problematic Directories
+App/
 
 # Other file patterns to ignore
 *.zip
 *.tmp
-*.json
