@@ -1,11 +1,12 @@
 {
-  "model_file_path": "../../CAD Models/Esp32/Esp32 Wavefront.obj",
-  "file_format": "obj",
-  "num_renders": 1,
+  "model_file_path": "FBX Model/ArduinoUNO.fbx",
+  "file_format": "fbx",
+  "num_renders": 10,
   "hdri_folder": "../../CAD Models/HDRIs",
-  "render_name": "esp32",
-  "render_output_directory": "../../Renders/esp32_2000",
-  "render_folder_name": "esp32_2000",
-  "percent_planes_added": 25,
-  "percent_objects_placed_flat": 10
+  "render_name": "ArduinoUNO",
+  "render_output_directory": "../../Renders/ArduinoUNO_Tests",
+  "render_folder_name": "ArduinoUNO_Tests",
+  "percent_planes_added": 50,
+  "percent_objects_placed_flat": 25,
+  "export_object_path": "C:/Users/saaso/Desktop/MachineVisionAR/CAD Models/FBX/Exported/ArduinoUNO_TEST.fbx"
 }
