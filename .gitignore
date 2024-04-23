@@ -2,7 +2,7 @@
 *.blend1
 
 # Blender training data script config.json
-C:/Users/saaso/Desktop/MachineVisionAR/Blender/Training Data Script/config.json
+Blender/Training Data Script/config.json
 
 # Rendered images directory
 Renders/
