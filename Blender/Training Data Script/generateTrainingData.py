@@ -191,6 +191,13 @@ def export_fbx(export_path, selected_objects=True, apply_transform=True):
         axis_up='Y'
     )
 
+def delete_file(file_path):
+    try:
+        os.remove(file_path)
+        print(f"Successfully deleted {file_path}")
+    except OSError as e:
+        print(f"Error: {file_path} : {e.strerror}")
+
 # Configure render settings
 bpy.context.scene.render.resolution_x = 512
 bpy.context.scene.render.resolution_y = 512
@@ -500,6 +507,10 @@ if collection_name in bpy.data.collections:
     
 if plane_created:
     bpy.data.objects.remove(plane, do_unlink=True)
+
+# Delete model and object data instance files
+delete_file(object_data_path)
+delete_file(model_file_path)
 
 print("Processing Complete")
         
