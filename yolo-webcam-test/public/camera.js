@@ -38,7 +38,7 @@ function captureAndSendFrame() {
 }
 
 // Call this function periodically
-setInterval(captureAndSendFrame, 300); // Adjust interval as needed
+setInterval(captureAndSendFrame, 400); // Adjust interval as needed
 
 function displayDetections(detections) {
     detections.forEach(detection => {
