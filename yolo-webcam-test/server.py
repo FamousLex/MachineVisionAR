@@ -7,7 +7,7 @@ import io
 app = Flask(__name__)
 CORS(app)
 
-model_path = 'C:/Users/saaso/Desktop/MachineVisionAR/objDetection/runs/models/best.pt'
+model_path = 'C:/Users/saaso/Desktop/MachineVisionAR/yolo-webcam-test/model_weights/best.pt'
 model = YOLO(model_path)
 
 @app.route('/detect', methods=['POST'])
