@@ -4,14 +4,27 @@
     <title>YOLO Object Detection</title>
     <style>
         #webcam, #overlay {
+            width: 512px;  /* Width of the square */
+            height: 512px; /* Height of the square */
+            object-fit: cover; /* Ensures the video content is sized and cropped to maintain aspect ratio */
             position: absolute;
+            top: 50%; /* Center vertically */
+            left: 50%; /* Center horizontally */
+            transform: translate(-50%, -50%); /* Align center of the video to the center of the viewport */
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 20vh;
+            margin: 0;
         }
     </style>
 </head>
 <body>
     <h1>YOLO Object Detection with Webcam</h1>
-    <video id="webcam" width="640" height="480" autoplay></video>
-    <canvas id="overlay" width="640" height="480"></canvas> <!-- Add this line -->
+    <video id="webcam" width="512" height="512" autoplay></video>
+    <canvas id="overlay" width="512" height="512"></canvas> <!-- Add this line -->
     <script src="camera.js"></script>
 </body>
 </html>

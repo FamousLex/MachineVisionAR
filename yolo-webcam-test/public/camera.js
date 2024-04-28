@@ -38,12 +38,12 @@ function captureAndSendFrame() {
 }
 
 // Call this function periodically
-setInterval(captureAndSendFrame, 5000); // Adjust interval as needed
+setInterval(captureAndSendFrame, 300); // Adjust interval as needed
 
 function displayDetections(detections) {
     detections.forEach(detection => {
         const {xmin, ymin, xmax, ymax, name, confidence} = detection;
-
+        console.log('confidence: ', confidence);
         // Draw the bounding box
         context.strokeStyle = '#00FF00'; // Green color for bounding box
         context.lineWidth = 4;

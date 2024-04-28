@@ -27,13 +27,12 @@ def detect():
 
         if results:
             detection_tensor = results[0].boxes.xyxy[0]
+            confs = results[0].boxes.conf
             print(f"Detections tensor: {detection_tensor}")
-
+            print(("confs: ", confs, " confs type: ", type(confs), " confs[0]: ", confs[0]))
             # Assuming the tensor is [x1, y1, x2, y2] for a single detection
             if detection_tensor.numel() == 4:
                 x1, y1, x2, y2 = detection_tensor.tolist()
-                # Default confidence score
-                conf = 1.0
                 # Label for the single class
                 label = results[0].names[0]  # Assuming the class name is stored here
 
@@ -42,7 +41,7 @@ def detect():
                     "ymin": int(y1),
                     "xmax": int(x2),
                     "ymax": int(y2),
-                    "confidence": float(conf),
+                    "confidence": float(max(confs)),
                     "name": label
                 })
 
