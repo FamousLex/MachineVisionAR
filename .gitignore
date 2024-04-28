@@ -19,3 +19,4 @@ App/
 # Other file patterns to ignore
 *.zip
 *.tmp
+*.pem
